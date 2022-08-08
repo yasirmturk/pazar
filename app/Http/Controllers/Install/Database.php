@@ -36,9 +36,10 @@ class Database extends Controller
         $database = $request['database'];
         $username = $request['username'];
         $password = $request['password'];
+        $prefix   = $request['prefix'];
 
         // Check database connection
-        if (!Installer::createDbTables($host, $port, $database, $username, $password)) {
+        if (!Installer::createDbTables($host, $port, $database, $username, $password, $prefix)) {
             $response = [
                 'status' => null,
                 'success' => false,
