@@ -29,6 +29,7 @@ return [
         'username'          => 'Username',
         'password'          => 'Password',
         'name'              => 'Database',
+        'prefix'            => 'Table Prefix',
     ],
 
     'settings' => [
